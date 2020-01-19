@@ -1,0 +1,186 @@
+/*
+   opciones:primario, segundario, tercerio, opcionales.
+    fuentes, color, tamano del texto, background-color, box-shadow, negrita, bordes.
+*/
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Nunito ExtraLight'), local('Nunito-ExtraLight'), url(https://fonts.gstatic.com/s/nunito/v11/XRXW3I6Li01BKofA-seUbuvISTs.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Nunito ExtraLight'), local('Nunito-ExtraLight'), url(https://fonts.gstatic.com/s/nunito/v11/XRXW3I6Li01BKofA-seUb-vISTs.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Nunito ExtraLight'), local('Nunito-ExtraLight'), url(https://fonts.gstatic.com/s/nunito/v11/XRXW3I6Li01BKofA-seUYevI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url(https://fonts.gstatic.com/s/nunito/v11/XRXW3I6Li01BKofA6sKUbuvISTs.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url(https://fonts.gstatic.com/s/nunito/v11/XRXW3I6Li01BKofA6sKUb-vISTs.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url(https://fonts.gstatic.com/s/nunito/v11/XRXW3I6Li01BKofA6sKUYevI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    /*height: 100vh;*/
+    margin: 0;
+}
+@font-face{
+    font-family:'Agenci';
+    src: local('Agenci'),
+         url('../fonts/Roboto-Light.ttf') format('truetype');
+}
+
+.ColorMarca{
+    color: rgba(248,80,50,1);
+    color: -moz-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
+    color: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,80,50,1)), color-stop(50%, rgba(241,111,92,1)), color-stop(51%, rgba(246,41,12,1)), color-stop(71%, rgba(240,47,23,1)), color-stop(100%, rgba(231,56,39,1)));
+    color: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
+    color: -o-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
+    color: -ms-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
+    color: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=1 );
+    text-shadow: 2px 2px 2px #FFEC33;
+}
+.ColorMarca:hover{
+    text-shadow: 2px 2px 2px #CCC;
+}
+.text-blue:hover{
+    text-shadow: 2px 2px 2px blue;
+}
+.text-red:hover{
+    text-shadow: 2px 2px 2px red;
+}
+.text-yellow:hover{
+    text-shadow: 2px 2px 2px yellow;
+}
+.text-green:hover{
+    text-shadow: 2px 2px 2px green;
+}
+
+.clr-pr{
+    color: #DF371E;
+}
+.clr-seg{
+    color: #3498DB;
+}
+a .clr-ter:not([href]):not([tabindex]{
+    color: #333;
+}
+.clr-ter{
+    color: #333;
+}
+a{
+    color: #333;
+}
+a .clr-ter:hover{
+    color: #333;    
+}
+.clr-opc{
+    color: #CCC;
+}
+.clr-opc2{
+    color: #BFC9CA;
+}
+.text-size-full{
+    font-size: 24px;
+}
+.text-size-xl{
+    font-size: 120%;
+}
+.text-size-g{
+    font-size:110%; 
+}
+.text-size-prd{
+    font-size:100%; 
+}
+.text-size-med{
+    font-size:90%; 
+}
+.text-size-pq{
+    font-size:80%; 
+}
+.text-size-mini{
+    font-size:70%; 
+}
+
+.text-dere{
+    text-align: left;
+}
+.text-centro{
+    text-align: center;
+}
+.text-izq{
+    text-align: right;
+}
+
+.back-pr{
+    background-color: #F8F9F9;
+}
+.back-seg{
+    background-color: #525050;
+}
+.back-input{
+    background-color: #F8F9F9;
+}
+
+.box-pr{
+    box-shadow: 2px 2px #eee;
+}
+.box-seg{
+    box-shadow: 0 0 1em #bbb;
+}
+
+.ngr-pr{
+    font-weight: bold;
+}
+.ngr-seg{
+    font-weight: 500;
+}
+.bold{
+    font-weight: bold;
+}
+.bord-pr{
+    border-radius: 4px;
+}
+.bord-seg{
+    border-radius: 5px;
+}
+
+.text-m{
+    text-transform: uppercase;
+}
+
